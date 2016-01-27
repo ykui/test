@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>HTML学习</title>
+<link rel="stylesheet" href="index.css" />
+</head>
+<script type="text/javascript">
+
+//下面是定义变量
+var username = "XX";
+var age =25;
+var demi = 2.85;
+var array = new Array();
+array.push("Tom");
+array.push("Jack");
+array.push("LiLei");
+/*
+var para = 2;
+switch(para){
+	case 1:
+	  alert("我是1");
+	  break;
+	case 2:
+	  alert("我是2");
+	  break;
+	case 3:
+	  alert("我是3");
+	  break;
+	default:
+	  alert("我是其他");
+}
+
+if(para==1){
+	alert("我是1");
+}else if(para==2){
+	alert("我是2");
+}else if(para==3){
+	alert("我是3");
+}else{
+	alert("我是其他");
+}
+*/
+/*
+for(var i=0;i<array.length;i++){
+	alert(array[i]);
+	if(array[i]=="Jack"){
+		continue;
+	}
+}
+*/
+//下面是定义for循环
+/*
+for(var i=0;i<5;i++){
+	if(i==2){
+		alert("循环到2");
+	}else{
+		alert(i);
+	}
+}
+
+//下面是定义while循环
+var j =0;
+while(j<5){
+	if(j==3){
+		alert("循环到3");
+	}else{
+		alert(j);
+	}
+	j++;
+}
+
+function testFun(){
+	var searchText = document.getElementById("searchText").value;
+	if(searchText){
+		alert(searchText+",你好");
+	}else{
+		alert("你什么都没有填，不跟你好了");
+	}
+}
+
+function showPic(){
+	//if(document.getElementById("showImg").style.display=="none"){
+	//	document.getElementById("showImg").style.display ="";
+		document.getElementById("showImg").innerHTML ="<img src='pic/xiao.jpg'/>";
+	}
+	//document.getElementById("showImg").innerText ="FDSFD";
+}
+
+function hidePic(){
+	document.getElementById("showImg").style.display="none";
+}
+*/
+function testArguments(x,y,z){
+	//在函数内部可以引用一个对象，它是arguments类似数组，但不是数组。它代表了函数实际接收参数的集合。可以通过下标对相应参数进行访问。如果修改此对象某些属性，如//arguments[index]，则被传进来的第index(如果有的话，下标从0开始)变量的值也会被修改。
+	arguments[2]=100;//argments为实际接受的参数，x,y,z是引用参数
+	alert(z);
+}
+testArguments(1,2,3);
+</script>
+
+<body>
+<!--
+<div id="showImg"></div>
+<table width="800px" border="1" cellspacing="0" align="center" id="table1">
+  <tr>
+    <td colspan="8">
+		<input type="text" id="searchText"/>
+		<input type="button" id="searchButton" value="查询"/>
+		<input type="button" id="addButton" value="增加" onclick="testFun();"/>
+		<input type="button" id="addButton2" value="显示图片" onclick="showPic();"/>
+		<input type="button" id="addButton3" value="隐藏图片" onclick="hidePic();"/>
+		<input type="button" id="updateButton" value="修改"/>
+		<input type="button" id="deleteButton" value="删除"/>
+	</td>
+  </tr>
+  <tr>
+  	<th>&nbsp;</th>
+    <th>姓名</th>
+    <th>性别</th>
+    <th>年龄</th>
+    <th>籍贯</th>
+    <th>职业</th>
+	<th>LOGO</th>
+	<th>操作</th>
+  </tr>
+  <tr>
+  	<td><input name="checkradio" type="checkbox" value="" checked="checked"/></td>
+    <td>段娟</td>
+    <td>女</td>
+    <td>25</td>
+    <td>湖北荆州</td>
+    <td>IT</td>
+	<td align="center">百度</td>
+	<td><a href="http://www.baidu.com" target="_blank"><img src="pic/bd_logo1.png" width="50" height="30" /></a></td>
+  </tr>
+  <tr>
+  	<td><input name="checkradio" type="checkbox" value="" /></td>
+    <td>宫崎骏</td>
+    <td>男</td>
+    <td>老头</td>
+    <td>小日本</td>
+    <td>漫画家</td>
+	<td align="center">google</td>
+	<td><a href="http://www.google.cn" target="_blank"><img src="pic/google.jpg" width="50" height="30"/></a></td>
+  </tr>
+  <tr>
+  	<td><input name="checkradio" type="checkbox" value="" /></td>
+    <td>习近平</td>
+    <td>男</td>
+    <td>未知</td>
+    <td>陕西</td>
+    <td>国家主席</td>
+	<td align="center">19lou</td>
+	<td><a href="http://www.19lou.com" target="_blank"><img src="pic/19lou.png" width="50" height="30"/></a></td>
+  </tr>
+</table>
+	<div id="addDiv" name="addDiv2" style="display:none">
+	<form>
+		<table>
+			<tr><td>姓名：<input type="text" id="username" value=""/></td></tr>
+			<tr>
+				<td>性别：
+					<select name="sex">
+						<option value="女" selected="selected">女</option>
+						<option value="男">男</option>
+						<option value="3">不男不女</option>
+						<option value="4">人妖</option>
+					</select>
+				</td>
+			</tr>
+			<tr><td>年龄：<input type="text" id="age"/></td></tr>
+			<tr><td>籍贯：<input type="text" id="jiguan"/></td></tr>
+			<tr><td>职业：<input type="text" id="zhiye"/></td></tr>
+			<tr>
+				<td>
+					<input type="submit" value="提交"/>
+					<input type="reset" value="重置"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+	</div>
+-->
+</body>
+</html>
