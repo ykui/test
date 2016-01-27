@@ -2,12 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>HTMLÑ§Ï°</title>
+<title>HTMLå­¦ä¹ </title>
 <link rel="stylesheet" href="index.css" />
 </head>
 <script type="text/javascript">
 
-//ÏÂÃæÊÇ¶¨Òå±äÁ¿
+//ä¸‹é¢æ˜¯å®šä¹‰å˜é‡
+//è¿™æ˜¯æˆ‘2016-01-27å·åŠ çš„æ³¨é‡Š by éš—æ¯…
 var username = "XX";
 var age =25;
 var demi = 2.85;
@@ -19,26 +20,26 @@ array.push("LiLei");
 var para = 2;
 switch(para){
 	case 1:
-	  alert("ÎÒÊÇ1");
+	  alert("æˆ‘æ˜¯1");
 	  break;
 	case 2:
-	  alert("ÎÒÊÇ2");
+	  alert("æˆ‘æ˜¯2");
 	  break;
 	case 3:
-	  alert("ÎÒÊÇ3");
+	  alert("æˆ‘æ˜¯3");
 	  break;
 	default:
-	  alert("ÎÒÊÇÆäËû");
+	  alert("æˆ‘æ˜¯å…¶ä»–");
 }
 
 if(para==1){
-	alert("ÎÒÊÇ1");
+	alert("æˆ‘æ˜¯1");
 }else if(para==2){
-	alert("ÎÒÊÇ2");
+	alert("æˆ‘æ˜¯2");
 }else if(para==3){
-	alert("ÎÒÊÇ3");
+	alert("æˆ‘æ˜¯3");
 }else{
-	alert("ÎÒÊÇÆäËû");
+	alert("æˆ‘æ˜¯å…¶ä»–");
 }
 */
 /*
@@ -49,21 +50,21 @@ for(var i=0;i<array.length;i++){
 	}
 }
 */
-//ÏÂÃæÊÇ¶¨ÒåforÑ­»·
+//ä¸‹é¢æ˜¯å®šä¹‰forå¾ªç¯
 /*
 for(var i=0;i<5;i++){
 	if(i==2){
-		alert("Ñ­»·µ½2");
+		alert("å¾ªç¯åˆ°2");
 	}else{
 		alert(i);
 	}
 }
 
-//ÏÂÃæÊÇ¶¨ÒåwhileÑ­»·
+//ä¸‹é¢æ˜¯å®šä¹‰whileå¾ªç¯
 var j =0;
 while(j<5){
 	if(j==3){
-		alert("Ñ­»·µ½3");
+		alert("å¾ªç¯åˆ°3");
 	}else{
 		alert(j);
 	}
@@ -73,9 +74,9 @@ while(j<5){
 function testFun(){
 	var searchText = document.getElementById("searchText").value;
 	if(searchText){
-		alert(searchText+",ÄãºÃ");
+		alert(searchText+",ä½ å¥½");
 	}else{
-		alert("ÄãÊ²Ã´¶¼Ã»ÓĞÌî£¬²»¸úÄãºÃÁË");
+		alert("ä½ ä»€ä¹ˆéƒ½æ²¡æœ‰å¡«ï¼Œä¸è·Ÿä½ å¥½äº†");
 	}
 }
 
@@ -92,8 +93,8 @@ function hidePic(){
 }
 */
 function testArguments(x,y,z){
-	//ÔÚº¯ÊıÄÚ²¿¿ÉÒÔÒıÓÃÒ»¸ö¶ÔÏó£¬ËüÊÇargumentsÀàËÆÊı×é£¬µ«²»ÊÇÊı×é¡£Ëü´ú±íÁËº¯ÊıÊµ¼Ê½ÓÊÕ²ÎÊıµÄ¼¯ºÏ¡£¿ÉÒÔÍ¨¹ıÏÂ±ê¶ÔÏàÓ¦²ÎÊı½øĞĞ·ÃÎÊ¡£Èç¹ûĞŞ¸Ä´Ë¶ÔÏóÄ³Ğ©ÊôĞÔ£¬Èç//arguments[index]£¬Ôò±»´«½øÀ´µÄµÚindex(Èç¹ûÓĞµÄ»°£¬ÏÂ±ê´Ó0¿ªÊ¼)±äÁ¿µÄÖµÒ²»á±»ĞŞ¸Ä¡£
-	arguments[2]=100;//argmentsÎªÊµ¼Ê½ÓÊÜµÄ²ÎÊı£¬x,y,zÊÇÒıÓÃ²ÎÊı
+	//åœ¨å‡½æ•°å†…éƒ¨å¯ä»¥å¼•ç”¨ä¸€ä¸ªå¯¹è±¡ï¼Œå®ƒæ˜¯argumentsç±»ä¼¼æ•°ç»„ï¼Œä½†ä¸æ˜¯æ•°ç»„ã€‚å®ƒä»£è¡¨äº†å‡½æ•°å®é™…æ¥æ”¶å‚æ•°çš„é›†åˆã€‚å¯ä»¥é€šè¿‡ä¸‹æ ‡å¯¹ç›¸åº”å‚æ•°è¿›è¡Œè®¿é—®ã€‚å¦‚æœä¿®æ”¹æ­¤å¯¹è±¡æŸäº›å±æ€§ï¼Œå¦‚//arguments[index]ï¼Œåˆ™è¢«ä¼ è¿›æ¥çš„ç¬¬index(å¦‚æœæœ‰çš„è¯ï¼Œä¸‹æ ‡ä»0å¼€å§‹)å˜é‡çš„å€¼ä¹Ÿä¼šè¢«ä¿®æ”¹ã€‚
+	arguments[2]=100;//argmentsä¸ºå®é™…æ¥å—çš„å‚æ•°ï¼Œx,y,zæ˜¯å¼•ç”¨å‚æ•°
 	alert(z);
 }
 testArguments(1,2,3);
@@ -106,51 +107,51 @@ testArguments(1,2,3);
   <tr>
     <td colspan="8">
 		<input type="text" id="searchText"/>
-		<input type="button" id="searchButton" value="²éÑ¯"/>
-		<input type="button" id="addButton" value="Ôö¼Ó" onclick="testFun();"/>
-		<input type="button" id="addButton2" value="ÏÔÊ¾Í¼Æ¬" onclick="showPic();"/>
-		<input type="button" id="addButton3" value="Òş²ØÍ¼Æ¬" onclick="hidePic();"/>
-		<input type="button" id="updateButton" value="ĞŞ¸Ä"/>
-		<input type="button" id="deleteButton" value="É¾³ı"/>
+		<input type="button" id="searchButton" value="æŸ¥è¯¢"/>
+		<input type="button" id="addButton" value="å¢åŠ " onclick="testFun();"/>
+		<input type="button" id="addButton2" value="æ˜¾ç¤ºå›¾ç‰‡" onclick="showPic();"/>
+		<input type="button" id="addButton3" value="éšè—å›¾ç‰‡" onclick="hidePic();"/>
+		<input type="button" id="updateButton" value="ä¿®æ”¹"/>
+		<input type="button" id="deleteButton" value="åˆ é™¤"/>
 	</td>
   </tr>
   <tr>
   	<th>&nbsp;</th>
-    <th>ĞÕÃû</th>
-    <th>ĞÔ±ğ</th>
-    <th>ÄêÁä</th>
-    <th>¼®¹á</th>
-    <th>Ö°Òµ</th>
+    <th>å§“å</th>
+    <th>æ€§åˆ«</th>
+    <th>å¹´é¾„</th>
+    <th>ç±è´¯</th>
+    <th>èŒä¸š</th>
 	<th>LOGO</th>
-	<th>²Ù×÷</th>
+	<th>æ“ä½œ</th>
   </tr>
   <tr>
   	<td><input name="checkradio" type="checkbox" value="" checked="checked"/></td>
-    <td>¶Î¾ê</td>
-    <td>Å®</td>
+    <td>æ®µå¨Ÿ</td>
+    <td>å¥³</td>
     <td>25</td>
-    <td>ºş±±¾£Öİ</td>
+    <td>æ¹–åŒ—è†å·</td>
     <td>IT</td>
-	<td align="center">°Ù¶È</td>
+	<td align="center">ç™¾åº¦</td>
 	<td><a href="http://www.baidu.com" target="_blank"><img src="pic/bd_logo1.png" width="50" height="30" /></a></td>
   </tr>
   <tr>
   	<td><input name="checkradio" type="checkbox" value="" /></td>
-    <td>¹¬Æé¿¥</td>
-    <td>ÄĞ</td>
-    <td>ÀÏÍ·</td>
-    <td>Ğ¡ÈÕ±¾</td>
-    <td>Âş»­¼Ò</td>
+    <td>å®«å´éª</td>
+    <td>ç”·</td>
+    <td>è€å¤´</td>
+    <td>å°æ—¥æœ¬</td>
+    <td>æ¼«ç”»å®¶</td>
 	<td align="center">google</td>
 	<td><a href="http://www.google.cn" target="_blank"><img src="pic/google.jpg" width="50" height="30"/></a></td>
   </tr>
   <tr>
   	<td><input name="checkradio" type="checkbox" value="" /></td>
-    <td>Ï°½üÆ½</td>
-    <td>ÄĞ</td>
-    <td>Î´Öª</td>
-    <td>ÉÂÎ÷</td>
-    <td>¹ú¼ÒÖ÷Ï¯</td>
+    <td>ä¹ è¿‘å¹³</td>
+    <td>ç”·</td>
+    <td>æœªçŸ¥</td>
+    <td>é™•è¥¿</td>
+    <td>å›½å®¶ä¸»å¸­</td>
 	<td align="center">19lou</td>
 	<td><a href="http://www.19lou.com" target="_blank"><img src="pic/19lou.png" width="50" height="30"/></a></td>
   </tr>
@@ -158,24 +159,24 @@ testArguments(1,2,3);
 	<div id="addDiv" name="addDiv2" style="display:none">
 	<form>
 		<table>
-			<tr><td>ĞÕÃû£º<input type="text" id="username" value=""/></td></tr>
+			<tr><td>å§“åï¼š<input type="text" id="username" value=""/></td></tr>
 			<tr>
-				<td>ĞÔ±ğ£º
+				<td>æ€§åˆ«ï¼š
 					<select name="sex">
-						<option value="Å®" selected="selected">Å®</option>
-						<option value="ÄĞ">ÄĞ</option>
-						<option value="3">²»ÄĞ²»Å®</option>
-						<option value="4">ÈËÑı</option>
+						<option value="å¥³" selected="selected">å¥³</option>
+						<option value="ç”·">ç”·</option>
+						<option value="3">ä¸ç”·ä¸å¥³</option>
+						<option value="4">äººå¦–</option>
 					</select>
 				</td>
 			</tr>
-			<tr><td>ÄêÁä£º<input type="text" id="age"/></td></tr>
-			<tr><td>¼®¹á£º<input type="text" id="jiguan"/></td></tr>
-			<tr><td>Ö°Òµ£º<input type="text" id="zhiye"/></td></tr>
+			<tr><td>å¹´é¾„ï¼š<input type="text" id="age"/></td></tr>
+			<tr><td>ç±è´¯ï¼š<input type="text" id="jiguan"/></td></tr>
+			<tr><td>èŒä¸šï¼š<input type="text" id="zhiye"/></td></tr>
 			<tr>
 				<td>
-					<input type="submit" value="Ìá½»"/>
-					<input type="reset" value="ÖØÖÃ"/>
+					<input type="submit" value="æäº¤"/>
+					<input type="reset" value="é‡ç½®"/>
 				</td>
 			</tr>
 		</table>
